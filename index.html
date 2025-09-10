@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="Repo.css">
 </head>
 <body>
-<script src="script.js"></script>
     <header id="header">
         <nav id="navbar">
             <a href="#" class="logo">ZEESHAN</a>
@@ -49,7 +48,7 @@
             <div class="about-text">
                 <h2>Our Story</h2>
                 <p>At Zeeshan, we believe that dining is more than just food; it's an experience. Born from a passion for authentic flavours and time-honoured recipes passed down through generations, our mission is to serve not just meals, but memories. Every dish is crafted with the finest ingredients and a deep respect for culinary heritage.</p>
-                <a href="#">Learn More About Us →</a>
+                <a href="#about">Learn More About Us →</a>
             </div>
         </div>
     </section>
@@ -75,7 +74,7 @@
                 </div>
             </div>
             <div class="text-center">
-                <a href="#" class="btn btn-primary">View Full Menu</a>
+                <a href="#signatures" class="btn btn-primary">View Full Menu</a>
             </div>
         </div>
     </section>
@@ -95,9 +94,18 @@
         <div class="container text-center">
             <h2>Book Your Table</h2>
             <form class="reservation-form">
-                <input type="date" name="date" required>
-                <input type="time" name="time" required>
-                <input type="number" name="guests" placeholder="Number of Guests" min="1" required>
+                <div class="form-group">
+                    <label for="res_date">Date:</label>
+                    <input type="date" id="res_date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="res_time">Time:</label>
+                    <input type="time" id="res_time" name="time" required>
+                </div>
+                <div class="form-group">
+                    <label for="res_guests">Number of Guests:</label>
+                    <input type="number" id="res_guests" name="guests" placeholder="e.g., 4" min="1" required>
+                </div>
                 <button type="submit" class="btn btn-primary">Find a Table</button>
             </form>
         </div>
@@ -129,7 +137,7 @@
             <div class="footer-col">
                 <h4>Quick Links</h4>
                 <ul>
-                    <li><a href="#">Our Menu</a></li>
+                    <li><a href="#signatures">Our Menu</a></li>
                     <li><a href="#">Careers</a></li>
                     <li><a href="#">Privacy Policy</a></li>
                     <li><a href="#">Terms of Service</a></li>
@@ -142,6 +150,5 @@
     </footer>
 
     <script src="script.js"></script>
-
 </body>
 </html>
